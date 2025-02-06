@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Secrets App</title>
+  </head>
+  <body>
+    <div class="row">
+      <h4 class="col s8 offset-s2">Secrets App</h4>
+      <div class="col s8 offset-s2">
+        <button id="encodeBtn" class="btn">Encode</button>
+        <button id="decodeBtn" class="btn">Decode</button>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+      <p id="err" class="col s8 offset-s2"></p>
+      <div class="col s8 offset-s2">
+        <div id="encode" class="card-panel">
+          <form action="submit">
+            <label>Enter a text to encode</label>
+            <input type="text" />
+            <button class="btn">Encode</button>
+          </form>
+        </div>
+        <div id="decode" class="card-panel">
+          <form action="submit">
+            <label>Enter a secret to decode</label>
+            <input type="text" />
+            <button class="btn">Decode</button>
+          </form>
+        </div>
+        <div id="result" class="card-panel">
+          Share this link
+          <input type="text" />
+          <button class="btn">Share</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
